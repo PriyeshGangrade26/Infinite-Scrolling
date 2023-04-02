@@ -1,0 +1,95 @@
+body {
+  background: #0f0c29;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.center {
+  display: flex;
+  height: 90vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.login-page {
+  width: 350px;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  padding: 50px 35px;
+  text-align: center;
+  border-radius: 10px;
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: black;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 15px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.form button:hover,
+.form button:active,
+.form button:focus {
+  transform: scale(0.97);
+}
+.error-message {
+  margin: 0 0 10px 0px;
+  color: crimson;
+}
+label {
+  position: relative;
+  width: 100%;
+}
+label input {
+  width: calc(100% - 2.5rem);
+}
+label .icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0.5rem;
+}
+
+@media only screen and (max-width: 460px) {
+  .login-page {
+    width: 250px;
+  }
+  .form {
+    padding: 25px 17px;
+  }
+  .form input {
+    margin: 0 0 10px 0;
+    padding: 10px;
+    font-size: 13px;
+  }
+  .form button {
+    padding: 10px;
+    font-size: 13px;
+  }
+  .error-message {
+    margin: 0 0 10px 0px;
+    font-size: 12px;
+  }
+}

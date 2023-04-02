@@ -1,0 +1,80 @@
+.MarginTop {
+  margin-top: 90px;
+}
+.UserListContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  z-index: 1 !important;
+}
+.profile {
+  width: 95%;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  position: relative;
+}
+.profile h2 {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+}
+.profile p {
+  font-size: 1em;
+  color: gray;
+}
+.profile .image {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease-in;
+}
+.profile:hover .image {
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 900px) {
+  .profile {
+    padding: 5px 20px;
+  }
+  .profile h2 {
+    font-size: 1.2em;
+  }
+  .profile p {
+    font-size: 0.9em;
+  }
+  .profile .image {
+    width: 45px;
+    height: 45px;
+  }
+  .profile:hover .image {
+    border-radius: 8px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .UserListContainer {
+    margin-bottom: 10px;
+  }
+  .profile {
+    padding: 5px;
+  }
+  .profile h2 {
+    font-size: 1em;
+  }
+  .profile p {
+    font-size: 0.6em;
+  }
+  .profile .image {
+    width: 45px;
+    height: 45px;
+    right: 5px;
+  }
+  .profile:hover .image {
+    border-radius: 8px;
+  }
+}
