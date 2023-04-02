@@ -14,17 +14,16 @@ To run the app, follow these steps:
 # Authentication
 
 The app uses fake login details, where the username is foo and the password is bar. Users can enter these details to log in to the app. Once logged in, users are directed to the home page.
-Home Page
 
+# Home Page
 The home page displays a list of users, with each user's photo and name. The list initially loads with a partial list of users, and when the user scrolls to the end of the page, the app shows loading feedback and loads more users after a 3-second delay.
-
 The home page also includes a logout button, which redirects the user to the login page.
-API
 
+# API
 The app uses the Random User API (https://randomuser.me/api/?results=500) to generate a list of users.
-Dependencies
 
-# The app uses the following open source libraries:
+# Dependencies
+The app uses the following open source libraries:
 
     Vite - for building the user interface
     React Router - for handling routing
