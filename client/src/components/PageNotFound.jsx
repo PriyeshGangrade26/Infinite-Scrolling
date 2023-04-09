@@ -26,7 +26,7 @@ const PageNotFound = () => {
           </p>
           <button
             className="btn-404 Center white-space"
-            onClick={goHome}>
+            onClick={()=> goHome()}>
             HOME
           </button>
         </div>

@@ -62,7 +62,7 @@ const Header = ({ Logout }) => {
             </button>
             <button
               className="hamburger"
-              onClick={toggleMenu}>
+              onClick={()=> toggleMenu()}>
               {isMenuOpen ? (
                 <FontAwesomeIcon
                   icon={faTimes}

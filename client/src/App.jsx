@@ -38,13 +38,13 @@ const App = () => {
         <Route
           path="/home"
           element={
-            authenticated ? <Home Logout={Logout} /> : <Navigate to="/" />
+            authenticated ? <Home/> : <Navigate to="/" />
           }
         />
         <Route
           path="/about"
           element={
-            authenticated ? <About Logout={Logout} /> : <Navigate to="/" />
+            authenticated ? <About/> : <Navigate to="/" />
           }
         />
         <Route
